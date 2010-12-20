@@ -1,9 +1,12 @@
 [submodule "bundle/nerdtree"]
-    path = bundle/nerdtree
-    url = https://github.com/scrooloose/nerdtree.git
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-task"]
-    path = bundle/vim-task
-    url = https://github.com/samsonw/vim-task.git
+	path = bundle/vim-task
+	url = git://github.com/samsonw/vim-task.git
 [submodule "bundle/html5.vim"]
-    path = bundle/html5.vim
-    url = https://github.com/othree/html5.vim.git
+	path = bundle/html5.vim
+	url = git://github.com/othree/html5.vim.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround
