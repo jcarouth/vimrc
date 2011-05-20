@@ -42,7 +42,7 @@ set smartindent
 
 set linebreak
 
-set textwidth=80
+" set textwidth=80
 
 syntax on
 
@@ -53,3 +53,5 @@ set incsearch
 " Very magic regex functionality
 :nnoremap / /\v
 :vnoremap / /\v
+
+autocmd VimEnter * NERDTree
