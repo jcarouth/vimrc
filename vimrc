@@ -54,4 +54,20 @@ set incsearch
 :nnoremap / /\v
 :vnoremap / /\v
 
-autocmd VimEnter * NERDTree
+" NERDTree stuff. To auto open or not, that is the question
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" autocmd VimEnter * NERDTree
+" autocmd VimEnter * wincmd p
+
+function OpenNERDTree()
+    execute ":NERDTree"
+    execute ":wincmd p"
+endfunction
+command -nargs=0 OpenNERDTree :call OpenNERDTree()
+
+nmap <ESC>t :OpenNERDTree<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+colorscheme wombat256
+
