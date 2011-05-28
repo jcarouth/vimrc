@@ -7,6 +7,9 @@
 [submodule "bundle/html5.vim"]
 	path = bundle/html5.vim
 	url = git://github.com/othree/html5.vim.git
+[submodule "bundle/snipmate.vim"]
+    path = bundle/snipmate.vim
+    url = git://github.com/weierophinney/snipmate.vim.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
     url = git://github.com/tpope/vim-surround
