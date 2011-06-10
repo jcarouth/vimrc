@@ -81,8 +81,3 @@ if has("gui_running")
 endif
 :nohls
 
-
-"""""" EXPERIMENTAL """"""""""""""
-source ~/.vim/php.vim
-source ~/.vim/phpdoc.vim
-
