@@ -42,13 +42,21 @@ set smartindent
 
 set linebreak
 
-" set textwidth=80
+" Textwidth set to 120 chars
+" Not sure if I like this
+set textwidth=120
 
+" Syntax highlighting, yes please
 syntax on
 
 set showmatch
 set nohlsearch
 set incsearch
+
+" Set the status line
+set stl=%t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
+" Always show a status line
+set laststatus=2
 
 " Very magic regex functionality
 :nnoremap / /\v
@@ -65,9 +73,16 @@ function OpenNERDTree()
 endfunction
 command -nargs=0 OpenNERDTree :call OpenNERDTree()
 
-nmap <ESC>t :OpenNERDTree<CR>
+nmap <ESC>t :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("gui_running")
+    colorscheme wombat256
+endif
+:nohls
 
-colorscheme wombat256
+
+"""""" EXPERIMENTAL """"""""""""""
+source ~/.vim/php.vim
+source ~/.vim/phpdoc.vim
 
