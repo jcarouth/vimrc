@@ -1,8 +1,13 @@
 " Vim syntax file
 " Jeff Carouth
 
+" " turn off vi-compatible mode
+set nocompatible
+
 " Refresh .vimrc file when modified
 autocmd! bufwritepost .vimrc source! %
+
+filetype off
 
 " Pathogen bundle configuration
 " URL: http://www.vim.org/scripts/script.php?script_id=2332
@@ -13,8 +18,7 @@ call pathogen#helptags()
 " Remap leader key to comma instead of \
 let mapleader = ","
 
-" " turn off vi-compatible mode
-set nocompatible
+
 
 " Diff ignore whitespace
 set diffopt+=iwhite
@@ -22,13 +26,17 @@ set diffopt+=iwhite
 " Change buffer without saving
 set hidden
 
+set nobackup        " it's not the 70s anymore
+set noswapfile      " ditto
+
+set pastetoggle=<F2>    " clean up paste indents
+
 set encoding=utf-8
 
 " File format order of preference
 set fileformats=unix,dos,mac
 
-" Enable context-based file indent preferences
-filetype plugin indent on
+filetype plugin indent on       " Enable context-based file indent preferences
 
 set expandtab
 set tabstop=4
@@ -58,24 +66,40 @@ set stl=%t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
 " Always show a status line
 set laststatus=2
 
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Maps
+:nnoremap ; :       " because <shift>:w<return> is too time consuming
+
+:nnoremap j gj      " jump visual lines up and down
+:nnoremap k gk
+
+" Window navigation shortcuts
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " Very magic regex functionality
 :nnoremap / /\v
 :vnoremap / /\v
+
+
+cmap w!! w !sudo tee % >/dev/null   " oops, forgot to sudo
 
 " NERDTree stuff. To auto open or not, that is the question
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
 
-function OpenNERDTree()
-    execute ":NERDTree"
-    execute ":wincmd p"
-endfunction
-command -nargs=0 OpenNERDTree :call OpenNERDTree()
-
 nmap <ESC>t :NERDTreeToggle<CR>
 
+:let NERDTreeShowHidden=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" snipMate options
+let g:snips_author = "Jeff Carouth"
+let g:snippets_dir = $HOME . "/.vim/snippets/"
+
 if has("gui_running")
     colorscheme wombat256
 endif
