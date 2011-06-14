@@ -62,7 +62,8 @@ set nohlsearch
 set incsearch
 
 " Set the status line
-set stl=%t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
+" set stl=[%{fugitive#statusline()}]\ %t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " Always show a status line
 set laststatus=2
 
@@ -110,6 +111,11 @@ iabbrev jc@ jcarouth@gmail.com
 iabbrev <jc@ <jcarouth@gmail.com>
 iabbrev jct@ jcarouth@tamu.edu
 iabbrev te. tamu.edu
+
+" ACK support -----------------------------------------------------------------
+set grepprg=ack-grep\ -a
+let g:ackprg="ack-grep -H --nocolor --nogroup --colum"
+map <leader>g :Ack
 
 " FileInfo --------------------------------------------------------------------
 
