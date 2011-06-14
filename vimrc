@@ -10,11 +10,19 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 set nocompatible
 
-" Refresh .vimrc file when modified
-autocmd! bufwritepost .vimrc source! %
+
 
 " Remap leader key to comma instead of \
 let mapleader = ","
+
+" vimcasts #24
+" Automatically reload vimrc on save
+if has("autocmd")
+    autocmd! bufwritepost .vimrc source $MYVIMRC
+endif
+
+" Quick editing of my vimrc
+nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " Diff ignore whitespace
 set diffopt+=iwhite
@@ -58,11 +66,11 @@ set stl=%t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
 " Always show a status line
 set laststatus=2
 
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maps
-:nnoremap ; :       " because <shift>:w<return> is too time consuming
 
-:nnoremap j gj      " jump visual lines up and down
+" Key Mappings ----------------------------------------------------------------
+:nnoremap ; :
+
+:nnoremap j gj
 :nnoremap k gk
 
 " Window navigation shortcuts
@@ -74,6 +82,8 @@ map <C-l> <C-w>l
 " Very magic regex functionality
 :nnoremap / /\v
 :vnoremap / /\v
+
+map <leader>cd :cd %:p:h<CR>    " Change directory to current path
 
 
 cmap w!! w !sudo tee % >/dev/null
@@ -91,15 +101,21 @@ let NERDTreeIgnore=[".git"]
 let g:snips_author = "Jeff Carouth"
 " let g:snippets_dir = $HOME . "/.vim/bundle/snipmate.vim/snippets/"
 
-let rtp += $HOME . "/.vim/snippets"
-
-if has("gui_running")
-    colorscheme wombat256
-endif
-:nohls
+" Color scheme ----------------------------------------------------------------
+:set t_Co=256
+:colorscheme wombat256
 
 " Abbreviations ---------------------------------------------------------------
 iabbrev jc@ jcarouth@gmail.com
+iabbrev <jc@ <jcarouth@gmail.com>
 iabbrev jct@ jcarouth@tamu.edu
 iabbrev te. tamu.edu
+
+" FileInfo --------------------------------------------------------------------
+
+" treat .phpt, .phtml files as PHP
+if has("autocmd")
+    autocmd BufNewFile,BufRead *.phpt set ft=php
+    autocmd BufNewFile,BufRead *.phtml set ft=php
+endif
 
