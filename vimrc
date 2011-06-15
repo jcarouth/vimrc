@@ -62,8 +62,7 @@ set nohlsearch
 set incsearch
 
 " Set the status line
-" set stl=[%{fugitive#statusline()}]\ %t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set stl=%t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
 " Always show a status line
 set laststatus=2
 
@@ -103,8 +102,8 @@ let g:snips_author = "Jeff Carouth"
 " let g:snippets_dir = $HOME . "/.vim/bundle/snipmate.vim/snippets/"
 
 " Color scheme ----------------------------------------------------------------
-:set t_Co=256
-:colorscheme wombat256
+" :set t_Co=256
+" :colorscheme wombat256
 
 " Abbreviations ---------------------------------------------------------------
 iabbrev jc@ jcarouth@gmail.com
