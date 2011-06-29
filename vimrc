@@ -94,7 +94,7 @@ cmap w!! w !sudo tee % >/dev/null
 
 nmap <ESC>t :NERDTreeToggle<CR>
 
-let NERDTreeShowHidden=1
+" let NERDTreeShowHidden=1
 let NERDTreeIgnore=[".git"]
 
 " snipMate --------------------------------------------------------------------
