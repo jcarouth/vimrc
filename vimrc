@@ -124,3 +124,6 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.phtml set ft=php
 endif
 
+" Tlist
+nnoremap <leader>t :TlistToggle<CR>
+
