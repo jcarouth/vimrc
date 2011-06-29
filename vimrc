@@ -125,5 +125,7 @@ if has("autocmd")
 endif
 
 " Tlist
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Use_Right_Window = 1
 nnoremap <leader>t :TlistToggle<CR>
 
