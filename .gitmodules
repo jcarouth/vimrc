@@ -33,3 +33,9 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git://github.com/leshill/vim-json.git
+[submodule "bundle/javascript.vim"]
+	path = bundle/javascript.vim
+	url = git://github.com/serverhorror/javascript.vim.git
