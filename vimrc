@@ -88,6 +88,10 @@ map <leader>cd :cd %:p:h<CR>    " Change directory to current path
 
 cmap w!! w !sudo tee % >/dev/null
 
+" checksyntax -----------------------------------------------------------------
+
+nmap <leader>l :CheckSyntax<CR>
+
 " NERDTree --------------------------------------------------------------------
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
