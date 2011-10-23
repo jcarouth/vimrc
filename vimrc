@@ -126,6 +126,7 @@ map <leader>g :Ack
 if has("autocmd")
     autocmd BufNewFile,BufRead *.phpt set ft=php
     autocmd BufNewFile,BufRead *.phtml set ft=php
+    autocmd BufNewFile,BufRead *.less set ft=css
 endif
 
 " Tlist
