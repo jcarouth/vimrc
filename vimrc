@@ -118,10 +118,13 @@ map <leader>g :Ack
 
 " FileInfo --------------------------------------------------------------------
 
-" treat .phpt, .phtml files as PHP
 if has("autocmd")
+    " treat .phpt, .phtml files as PHP
     autocmd BufNewFile,BufRead *.phpt set ft=php
     autocmd BufNewFile,BufRead *.phtml set ft=php
+
+    " LESS for CSS
+    autocmd BufNewFile,BufRead *.less set ft=css
 endif
 
 " Tlist
