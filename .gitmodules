@@ -24,9 +24,6 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/weierophinney/vimwiki.git
-[submodule "bundle/vim-latex"]
-	path = bundle/vim-latex
-	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
 [submodule "bundle/taglist.vim"]
 	path = bundle/taglist.vim
 	url = https://github.com/vim-scripts/taglist.vim.git
