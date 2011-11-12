@@ -48,3 +48,6 @@
 [submodule "bundle/jasmine.vim"]
 	path = bundle/jasmine.vim
 	url = git://github.com/claco/jasmine.vim.git
+[submodule "bundle/netrw.vim"]
+	path = bundle/netrw.vim
+	url = git://github.com/vim-scripts/netrw.vim.git
