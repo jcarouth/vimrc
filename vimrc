@@ -52,6 +52,8 @@ set smartindent
 
 set linebreak
 
+" Show line numbers
+set number
 
 " Syntax highlighting, yes please
 syntax on
