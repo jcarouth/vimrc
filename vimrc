@@ -52,7 +52,6 @@ set smartindent
 
 set linebreak
 
-set textwidth=120
 
 " Syntax highlighting, yes please
 syntax on
