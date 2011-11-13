@@ -57,3 +57,6 @@
 [submodule "bundle/css3-syntax"]
 	path = bundle/css3-syntax
 	url = git://github.com/hail2u/vim-css3-syntax.git
+[submodule "bundle/less-css"]
+	path = bundle/less-css
+	url = git://github.com/groenewege/vim-less.git
