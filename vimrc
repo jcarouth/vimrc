@@ -122,7 +122,7 @@ map <leader>g :Ack
 if has("autocmd")
     " treat .phpt, .phtml files as PHP
     autocmd BufNewFile,BufRead *.phpt set ft=php
-    autocmd BufNewFile,BufRead *.phtml set ft=php
+    autocmd BufNewFile,BufRead *.phtml set ft=html.php.js.css
 
     " LESS for CSS
     autocmd BufNewFile,BufRead *.less set ft=css
