@@ -45,3 +45,15 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/html5"]
+	path = bundle/html5
+	url = git://github.com/othree/html5.vim.git
+[submodule "bundle/css-color"]
+	path = bundle/css-color
+	url = git://github.com/skammer/vim-css-color.git
+[submodule "bundle/css3-syntax"]
+	path = bundle/css3-syntax
+	url = git://github.com/hail2u/vim-css3-syntax.git
