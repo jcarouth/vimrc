@@ -89,6 +89,10 @@ map <leader>cd :cd %:p:h<CR>    " Change directory to current path
 
 cmap w!! w !sudo tee % >/dev/null
 
+
+" quick buffer switching
+nnoremap <leader><leader> <c-^>
+
 " NERDTree --------------------------------------------------------------------
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
@@ -136,3 +140,10 @@ nnoremap <leader>t :TlistToggle<CR>
 " syntastic
 let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_signs=1
+
+
+" Command-T
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
