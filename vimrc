@@ -147,3 +147,7 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+
+" Gist
+let g:gist_detect_filetype = 1
+
