@@ -151,3 +151,5 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 " Gist
 let g:gist_detect_filetype = 1
 
+" YankRing
+nnoremap <silent> <F11> :YRShow<CR>
