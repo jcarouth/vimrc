@@ -135,7 +135,7 @@ endif
 " Tlist
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Use_Right_Window = 1
-nnoremap <leader>t :TlistToggle<CR>
+nnoremap <leader>i :TlistToggle<CR>
 
 " syntastic
 let g:syntastic_auto_loc_list=1
