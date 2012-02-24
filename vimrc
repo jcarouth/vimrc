@@ -126,6 +126,12 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.less set ft=css
 endif
 
+" Fugitive (git integration)
+nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gs :Gstatus<CR>
+
 " Tlist
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Use_Right_Window = 1
