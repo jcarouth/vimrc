@@ -142,12 +142,6 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_signs=1
 
 
-" Command-T
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
-
 " Gist
 let g:gist_detect_filetype = 1
 
