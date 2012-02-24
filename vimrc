@@ -110,12 +110,6 @@ let g:snips_author = "Jeff Carouth"
 " :set t_Co=256
 " :colorscheme wombat256
 
-" Abbreviations ---------------------------------------------------------------
-iabbrev jc@ jcarouth@gmail.com
-iabbrev <jc@ <jcarouth@gmail.com>
-iabbrev jct@ jcarouth@tamu.edu
-iabbrev te. tamu.edu
-
 " ACK support -----------------------------------------------------------------
 set grepprg=ack-grep\ -a
 let g:ackprg="ack-grep -H --nocolor --nogroup --colum"
