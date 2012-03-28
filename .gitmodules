@@ -87,3 +87,6 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/DBGp-client.git"]
+	path = bundle/DBGp-client.git
+	url = git://github.com/vim-scripts/DBGp-client.git
