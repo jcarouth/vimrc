@@ -90,3 +90,6 @@
 [submodule "bundle/DBGp-client.git"]
 	path = bundle/DBGp-client.git
 	url = git://github.com/vim-scripts/DBGp-client.git
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = git://github.com/mattn/webapi-vim.git
