@@ -93,3 +93,6 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
+[submodule "bundle/vim-web-indent.git"]
+	path = bundle/vim-web-indent.git
+	url = git://github.com/lukaszb/vim-web-indent.git
