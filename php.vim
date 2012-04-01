@@ -1,0 +1,1 @@
+bundle/syntax-php.vim/syntax/php.vim
