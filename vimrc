@@ -97,7 +97,7 @@ nnoremap <leader><leader> <c-^>
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
 
-nmap <ESC>t :NERDTreeToggle<CR>
+nmap <ESC>t :execute 'NERDTreeToggle ' .getcwd() <CR>
 
 " let NERDTreeShowHidden=1
 let NERDTreeIgnore=[".git"]
