@@ -99,3 +99,6 @@
 [submodule "bundle/snipmate-snippets.git"]
 	path = bundle/snipmate-snippets.git
 	url = git://github.com/spf13/snipmate-snippets.git
+[submodule "bundle/php.vim"]
+	path = bundle/php.vim
+	url = git://github.com/vim-scripts/php.vim--Garvin.git
