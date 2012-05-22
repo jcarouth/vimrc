@@ -99,3 +99,6 @@
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
 	url = git://github.com/vim-scripts/php.vim--Garvin.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
