@@ -149,3 +149,11 @@ let g:gist_detect_filetype = 1
 
 " YankRing
 nnoremap <silent> <F11> :YRShow<CR>
+
+" Presentation colors
+function! PresentationMode()
+    colorscheme sienna
+    set bg=light
+    set nolist
+endfunction
+nmap <leader>PR :call PresentationMode()<cr>
