@@ -67,6 +67,9 @@ set stl=%t\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
 " Always show a status line
 set laststatus=2
 
+" fix backspace for newlines
+set backspace=indent,eol,start
+
 
 " Key Mappings ----------------------------------------------------------------
 :nnoremap ; :
