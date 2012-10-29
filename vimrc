@@ -92,6 +92,9 @@ map <leader>cd :cd %:p:h<CR>    " Change directory to current path
 
 cmap w!! w !sudo tee % >/dev/null
 
+" auto trim trailing whitespace for src files
+autocmd FileType c,java,php,javascript autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 
 " quick buffer switching
 nnoremap <leader><leader> <c-^>
@@ -144,7 +147,7 @@ nnoremap <leader>i :TlistToggle<CR>
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_enable_signs = 1
 let g:syntastic_quiet_warnings = 1
-let g:syntastic_phpcs_disable = 1
+let g:syntastic_phpcs_disable = 0
 
 
 " Gist
@@ -158,5 +161,14 @@ function! PresentationMode()
     colorscheme sienna
     set bg=light
     set nolist
+    set nonumber
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
+
+function! FixDosToUnixLF()
+    update
+    e ++ff=dos
+    setlocal ff=unix
+    w
+endfunction
+nmap <leader>FDU :call FixDosToUnixLF()<CR>

@@ -108,3 +108,9 @@
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/javascript-indent"]
+	path = bundle/javascript-indent
+	url = git://github.com/vim-scripts/JavaScript-Indent.git
