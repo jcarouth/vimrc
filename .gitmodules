@@ -63,12 +63,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/closetag-vim"]
-	path = bundle/closetag-vim
-	url = git://github.com/vim-scripts/closetag.vim.git
-[submodule "bundle/autoclose"]
-	path = bundle/autoclose
-	url = git://github.com/vim-scripts/AutoClose.git
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = git://github.com/mattn/zencoding-vim.git
@@ -93,9 +87,6 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
-[submodule "bundle/vim-web-indent.git"]
-	path = bundle/vim-web-indent.git
-	url = git://github.com/lukaszb/vim-web-indent.git
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
 	url = git://github.com/vim-scripts/php.vim--Garvin.git
@@ -105,9 +96,6 @@
 [submodule "bundle/vim-colors-solarized.git"]
 	path = bundle/vim-colors-solarized.git
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/minibufexpl.vim"]
-	path = bundle/minibufexpl.vim
-	url = https://github.com/fholgado/minibufexpl.vim
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
