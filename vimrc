@@ -92,10 +92,6 @@ map <leader>cd :cd %:p:h<CR>    " Change directory to current path
 
 cmap w!! w !sudo tee % >/dev/null
 
-" auto trim trailing whitespace for src files
-autocmd FileType c,java,php,javascript autocmd BufWritePre <buffer> :%s/\s\+$//e
-
-
 " quick buffer switching
 nnoremap <leader><leader> <c-^>
 
@@ -172,3 +168,15 @@ function! FixDosToUnixLF()
     w
 endfunction
 nmap <leader>FDU :call FixDosToUnixLF()<CR>
+
+function! <SID>StripTrailingWhitespace()
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+
+    %s/\s\+$//e
+
+    let @/=_s
+    call cursor(l, c)
+endfunction
+nmap <silent> <leader>c :call <SID>StripTrailingWhitespace()<cr>
