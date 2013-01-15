@@ -123,9 +123,16 @@ if has("autocmd")
     " treat .phpt, .phtml files as PHP
     autocmd BufNewFile,BufRead *.phpt set ft=php
     autocmd BufNewFile,BufRead *.phtml set ft=html.php.js.css
+    autocmd BufNewFile,BufRead *.html.twig set ft=html.php.js.css
+    autocmd BufNewFile,BufRead *.js.twig set ft=js
 
     " LESS for CSS
     autocmd BufNewFile,BufRead *.less set ft=css
+
+    " Tabs
+    autocmd BufRead,BufNewFile *.feature setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 endif
 
 " Fugitive (git integration)
