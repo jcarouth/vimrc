@@ -1,12 +1,10 @@
 " Vim syntax file
-" Jeff Carouth
-"
+" Jeff Carouth <jcarouth@gmail.com>
 
-" PREAMBLE --------------------------------------------------------------------
-filetype off
 " Pathogen bundle configuration
-" URL: http://www.vim.org/scripts/script.php?script_id=2332
-call pathogen#runtime_append_all_bundles()
+" URL: https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
 filetype plugin indent on
 set nocompatible
 
