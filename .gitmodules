@@ -102,3 +102,6 @@
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
 	url = git://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/vim-behat"]
+	path = bundle/vim-behat
+	url = git://github.com/veloce/vim-behat.git
