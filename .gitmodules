@@ -113,3 +113,6 @@
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
 	url = git://github.com/EvanDotPro/phpcomplete.vim.git
+[submodule "bundle/php-getter-setter.vim"]
+	path = bundle/php-getter-setter.vim
+	url = git://github.com/docteurklein/php-getter-setter.vim.git
