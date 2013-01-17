@@ -160,6 +160,12 @@ nnoremap <silent> <F11> :YRShow<CR>
 " Behat
 let feature_filetype = 'behat'
 
+" php-namespace
+imap <buffer> <leader>u <C-O>:call PhpInsertUse()<cr>
+map <buffer> <leader>u :call PhpInsertUse()<cr>
+imap <buffer> <leader>e <C-O>:call PhpExpandClass()<cr>
+map <buffer> <leader>e :call PhpExpandClass()<cr>
+
 " Presentation colors
 function! PresentationMode()
     colorscheme sienna

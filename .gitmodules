@@ -116,3 +116,6 @@
 [submodule "bundle/php-getter-setter.vim"]
 	path = bundle/php-getter-setter.vim
 	url = git://github.com/docteurklein/php-getter-setter.vim.git
+[submodule "bundle/vim-php-namespace"]
+	path = bundle/vim-php-namespace
+	url = git://github.com/arnaud-lb/vim-php-namespace.git
