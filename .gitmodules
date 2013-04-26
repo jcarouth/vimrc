@@ -1,9 +1,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vim-task"]
-	path = bundle/vim-task
-	url = git://github.com/samsonw/vim-task.git
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = git://github.com/weierophinney/snipmate.vim.git
@@ -12,9 +9,6 @@
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround
     ignore = untracked
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -30,12 +24,6 @@
 [submodule "bundle/javascript.vim"]
 	path = bundle/javascript.vim
 	url = git://github.com/serverhorror/javascript.vim.git
-[submodule "bundle/zencoding-vim"]
-	path = bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
-[submodule "bundle/jasmine.vim"]
-	path = bundle/jasmine.vim
-	url = git://github.com/claco/jasmine.vim.git
 [submodule "bundle/netrw.vim"]
 	path = bundle/netrw.vim
 	url = git://github.com/vim-scripts/netrw.vim.git
@@ -54,24 +42,12 @@
 [submodule "bundle/css3-syntax"]
 	path = bundle/css3-syntax
 	url = git://github.com/hail2u/vim-css3-syntax.git
-[submodule "bundle/less-css"]
-	path = bundle/less-css
-	url = git://github.com/groenewege/vim-less.git
 [submodule "bundle/vim-buffergator"]
 	path = bundle/vim-buffergator
 	url = git://github.com/jeetsukumaran/vim-buffergator.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
-[submodule "bundle/mustache"]
-	path = bundle/mustache
-	url = git://github.com/juvenn/mustache.vim.git
-[submodule "bundle/align"]
-	path = bundle/align
-	url = git://github.com/tsaleh/vim-align.git
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
 	url = git://github.com/mattn/gist-vim.git
@@ -90,9 +66,6 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule "bundle/vim-colors-solarized.git"]
-	path = bundle/vim-colors-solarized.git
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
@@ -102,3 +75,6 @@
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
 	url = git://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = git://github.com/Valloric/YouCompleteMe.git
