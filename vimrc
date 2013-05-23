@@ -93,7 +93,7 @@ map <leader>cd :cd %:p:h<CR>    " Change directory to current path
 cmap w!! w !sudo tee % >/dev/null
 
 " quick buffer switching
-nnoremap <leader><leader> <c-^>
+"nnoremap <leader><leader> <c-^>
 
 " NERDTree --------------------------------------------------------------------
 " autocmd VimEnter * NERDTree
@@ -115,7 +115,7 @@ let g:snips_author = "Jeff Carouth"
 " ACK support -----------------------------------------------------------------
 set grepprg=ack-grep\ -a
 let g:ackprg="ack-grep -H --nocolor --nogroup --colum"
-map <leader>g :Ack
+"map <leader>g :Ack
 
 " FileInfo --------------------------------------------------------------------
 
@@ -152,12 +152,15 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_quiet_warnings = 1
 let g:syntastic_phpcs_disable = 0
 
+" ctrl-p
+nnoremap <leader>p :CtrlP<CR>
+
 
 " Gist
 let g:gist_detect_filetype = 1
 
 " YankRing
-nnoremap <silent> <F11> :YRShow<CR>
+nnoremap ,y :YRShow<CR>
 
 " Presentation colors
 function! PresentationMode()
