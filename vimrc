@@ -117,6 +117,9 @@ set grepprg=ack-grep\ -a
 let g:ackprg="ack-grep -H --nocolor --nogroup --colum"
 "map <leader>g :Ack
 
+" DASH  -----------------------------------------------------------------------
+nmap <silent> <leader>d <Plug>DashSearch
+
 " FileInfo --------------------------------------------------------------------
 
 if has("autocmd")

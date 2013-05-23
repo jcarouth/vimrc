@@ -84,3 +84,9 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/dash"]
+	path = bundle/dash
+	url = git://github.com/rizzatti/dash.vim.git
+[submodule "bundle/funcoo"]
+	path = bundle/funcoo
+	url = git://github.com/rizzatti/funcoo.vim.git
