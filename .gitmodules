@@ -90,3 +90,9 @@
 [submodule "bundle/funcoo"]
 	path = bundle/funcoo
 	url = git://github.com/rizzatti/funcoo.vim.git
+[submodule "bundle/git"]
+	path = bundle/git
+	url = git://github.com/tpope/vim-git.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
