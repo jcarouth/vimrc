@@ -91,7 +91,7 @@ map <leader>cd :cd %:p:h<CR>    " Change directory to current path
 cmap w!! w !sudo tee % >/dev/null
 
 " quick buffer switching
-nnoremap <leader><leader> <c-^>
+"nnoremap <leader><leader> <c-^>
 
 " NERDTree --------------------------------------------------------------------
 " autocmd VimEnter * NERDTree
@@ -113,24 +113,29 @@ let g:snips_author = "Jeff Carouth"
 " ACK support -----------------------------------------------------------------
 set grepprg=ack-grep\ -a
 let g:ackprg="ack-grep -H --nocolor --nogroup --colum"
-map <leader>g :Ack
+"map <leader>g :Ack
+
+" DASH  -----------------------------------------------------------------------
+nmap <silent> <leader>d <Plug>DashSearch
 
 " FileInfo --------------------------------------------------------------------
 
 if has("autocmd")
     " treat .phpt, .phtml files as PHP
-    autocmd BufNewFile,BufRead *.phpt set ft=php
-    autocmd BufNewFile,BufRead *.phtml set ft=html.php.js.css
+    autocmd BufNewFile,BufRead *.phpt      set ft=php
+    autocmd BufNewFile,BufRead *.phtml     set ft=html.php.js.css
     autocmd BufNewFile,BufRead *.html.twig set ft=html.php.js.css
-    autocmd BufNewFile,BufRead *.js.twig set ft=js
+    autocmd BufNewFile,BufRead *.js.twig   set ft=js
 
     " LESS for CSS
-    autocmd BufNewFile,BufRead *.less set ft=css
+    autocmd BufNewFile,BufRead *.less      set ft=css
 
     " Tabs
-    autocmd BufRead,BufNewFile *.feature setlocal tabstop=2 shiftwidth=2 softtabstop=2
-    autocmd BufRead,BufNewFile *.css setlocal tabstop=2 shiftwidth=2 softtabstop=2
-    autocmd BufRead,BufNewFile *.js setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.feature   setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.css       setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.js        setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.rb        setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 endif
 
 " Fugitive (git integration)
@@ -156,12 +161,15 @@ map <leader>cs :SyntasticCheck<cr>
 " tagbar
 nnoremap <silent> <leader>i :TagbarToggle<cr>
 
+" ctrl-p
+nnoremap <leader>p :CtrlP<CR>
+
 
 " Gist
 let g:gist_detect_filetype = 1
 
 " YankRing
-nnoremap <silent> <F11> :YRShow<CR>
+nnoremap ,y :YRShow<CR>
 
 " Behat
 let feature_filetype = 'behat'
