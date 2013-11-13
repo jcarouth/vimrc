@@ -96,3 +96,9 @@
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/ruby"]
+	path = bundle/ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/golang"]
+	path = bundle/golang
+	url = git://github.com/jnwhiteh/vim-golang.git
