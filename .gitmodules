@@ -96,3 +96,6 @@
 [submodule "bundle/golang"]
 	path = bundle/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/php-namespace"]
+	path = bundle/php-namespace
+	url = git://github.com/arnaud-lb/vim-php-namespace.git
