@@ -1,12 +1,10 @@
 " Vim syntax file
-" Jeff Carouth
-"
+" Jeff Carouth <jcarouth@gmail.com>
 
-" PREAMBLE --------------------------------------------------------------------
-filetype off
 " Pathogen bundle configuration
-" URL: http://www.vim.org/scripts/script.php?script_id=2332
-call pathogen#runtime_append_all_bundles()
+" URL: https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
 filetype plugin indent on
 set nocompatible
 
@@ -147,16 +145,22 @@ nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gs :Gstatus<CR>
 
-" Tlist
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Use_Right_Window = 1
-nnoremap <leader>i :TlistToggle<CR>
-
 " syntastic
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_enable_signs = 1
 let g:syntastic_quiet_warnings = 1
 let g:syntastic_phpcs_disable = 0
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': [] }
+
+map <leader>cs :SyntasticCheck<cr>
+
+" tagbar
+nnoremap <silent> <leader>i :TagbarToggle<cr>
 
 " ctrl-p
 nnoremap <leader>p :CtrlP<CR>
@@ -167,6 +171,15 @@ let g:gist_detect_filetype = 1
 
 " YankRing
 nnoremap ,y :YRShow<CR>
+
+" Behat
+let feature_filetype = 'behat'
+
+" php-namespace
+imap <buffer> <leader>u <C-O>:call PhpInsertUse()<cr>
+map <buffer> <leader>u :call PhpInsertUse()<cr>
+imap <buffer> <leader>e <C-O>:call PhpExpandClass()<cr>
+map <buffer> <leader>e :call PhpExpandClass()<cr>
 
 " Presentation colors
 function! PresentationMode()
