@@ -134,6 +134,7 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.feature   setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufRead,BufNewFile *.css       setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufRead,BufNewFile *.js        setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufRead,BufNewFile *.json      setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufRead,BufNewFile *.rb        setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufRead,BufNewFile *.json      setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
