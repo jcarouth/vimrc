@@ -121,6 +121,8 @@ nmap <silent> <leader>d <Plug>DashSearch
 " FileInfo --------------------------------------------------------------------
 
 if has("autocmd")
+    autocmd BufWritePre * StripWhitespace
+
     " treat .phpt, .phtml files as PHP
     autocmd BufNewFile,BufRead *.phpt      set ft=php
     autocmd BufNewFile,BufRead *.phtml     set ft=html.php.js.css
@@ -198,15 +200,3 @@ function! FixDosToUnixLF()
     w
 endfunction
 nmap <leader>FDU :call FixDosToUnixLF()<CR>
-
-function! <SID>StripTrailingWhitespace()
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-
-    %s/\s\+$//e
-
-    let @/=_s
-    call cursor(l, c)
-endfunction
-nmap <silent> <leader>c :call <SID>StripTrailingWhitespace()<cr>

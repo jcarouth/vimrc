@@ -105,3 +105,6 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim.git
+[submodule "bundle/better-whitespace"]
+	path = bundle/better-whitespace
+	url = git://github.com/ntpeters/vim-better-whitespace.git
