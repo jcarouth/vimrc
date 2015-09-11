@@ -108,3 +108,6 @@
 [submodule "bundle/better-whitespace"]
 	path = bundle/better-whitespace
 	url = git://github.com/ntpeters/vim-better-whitespace.git
+[submodule "bundle/editorconfig"]
+	path = bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
